@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.display.FlxBackdrop;
 #if desktop
 import Discord.DiscordClient;
 import sys.thread.Thread;
@@ -61,12 +62,14 @@ class TitleState extends MusicBeatState
 
 	public static var initialized:Bool = false;
 
+	var panorama:FlxBackdrop;
 	var blackScreen:FlxSprite;
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
 	var weird:FlxSprite;
+
 
 	var themeAntialiasing = false;
 	
@@ -361,11 +364,18 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
+		var nightPano = Date.now().getHours() >= 19 || Date.now().getHours() < 6;
+
+		panorama = new FlxBackdrop(Paths.image(nightPano ? "night" : "day"), 0, 0, true, false, 0, 0);
+		panorama.velocity.set(50, 0);
+		add(panorama);
+
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		logoBl.frames = Paths.getThemedSparrowAtlas('logoBumpin');
 
 		logoBl.antialiasing = themeAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
+		logoBl.screenCenter();
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		// logoBl.screenCenter();
@@ -423,7 +433,7 @@ class TitleState extends MusicBeatState
 				gfDance.antialiasing = themeAntialiasing;
 		}
 
-		add(gfDance);
+		//add(gfDance);
 		gfDance.shader = swagShader.shader;
 		add(logoBl);
 		logoBl.shader = swagShader.shader;
@@ -773,17 +783,10 @@ class TitleState extends MusicBeatState
 	{
 		super.beatHit();
 
+		FlxTween.tween(FlxG.camera, {zoom:1.03}, 0.3, {ease: FlxEase.quadOut, type: BACKWARD});
+
 		if (logoBl != null)
 			logoBl.animation.play('bump', true);
-
-		if (gfDance != null)
-		{
-			danceLeft = !danceLeft;
-			if (danceLeft)
-				gfDance.animation.play('danceRight');
-			else
-				gfDance.animation.play('danceLeft');
-		}
 
 		if (!closedState && !skippedIntro)
 		{
