@@ -216,7 +216,7 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				var daChoice:Array<String> = optionShit[curSelected];
+				var daChoice:String = optionShit[curSelected][0];
 				if (daChoice == 'story_mode' || daChoice == 'freeplay'){
 				}
 
