@@ -14,6 +14,17 @@
 	"engineThanks": "Merci d'utiliser cet Engine!",
 	
 	
+	"storyMode": "Mode Histoire",
+	"freeplay": "Jeu libre",
+	"mods": "Mods",
+	"awards": "Progres",
+	"credits": "Credits",
+	"donate": "Donation",
+	"options": "Options...",
+	"bonus": "Bonus",
+	"quitGame": "Quitter le jeu",
+	
+	
 	"weekScore": "SCORE DE LA SEMAINE :",
 	
 	
@@ -173,20 +184,5 @@
 	"hitWindow": "Fenêtre de frape de @[rating]",
 	"hitWindowDesc": "Modifie le temps dont vous disposez\npour frapper un \"@[rating]\" en millisecondes.",
 	"safeFrames": "Frames de sureté",
-	"safeFramesDesc": "Modifie le nombre de frames dont vous disposez\npour jouer une note plus tôt ou plus tard.",
-
-	"scoreName": "Score: ",
-	"missesName": "Manque: ",
-	"ratingName": "Évaluation: ",
-
-	"youSuckName": "Tu crains!",
-	"shitName": "Merde",
-	"badName": "Mal",
-	"bruhName": "Bruh",
-	"mehName": "Meh",
-	"niceName": "Agréable",
-	"goodName": "Bien",
-	"greatName": "Super",
-	"sickName": "Malade!",
-	"perfectName": "Parfait!!"
+	"safeFramesDesc": "Modifie le nombre de frames dont vous disposez\npour jouer une note plus tôt ou plus tard."
 }

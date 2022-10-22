@@ -14,6 +14,17 @@
 	"engineThanks": "Tack för att du använder Wierd Engine!",
 	
 	
+	"storyMode": "Story Mode",
+	"freeplay": "Freeplay",
+	"mods": "Mods",
+	"awards": "Advancements",
+	"credits": "Credits",
+	"donate": "Donate",
+	"options": "Options...",
+	"bonus": "Bonus",
+	"quitGame": "Quit Game",
+	
+	
 	"weekScore": "POÄNG DENNA VECKA:",
 	
 	
@@ -172,20 +183,5 @@
 	"hitWindow": "@[rating] Tryck på Fönster",
 	"hitWindowDesc": "Ändrar hur lång tid du har\npå att slå en\"@[rating]\" i millisekunder.",
 	"safeFrames": "Säkra Frames",
-	"safeFramesDesc": "Ändrar hur många ramar du har för att\nslå en ton tidigare eller sent.",
-
-	"scoreName": "Göra: ",
-	"missesName": "Missar: ",
-	"ratingName": "Betyg: ",
-
-	"youSuckName": "Du suger!",
-	"shitName": "Skit",
-	"badName": "Dålig",
-	"bruhName": "Bruh",
-	"mehName": "Meh",
-	"niceName": "Trevlig",
-	"goodName": "Bra",
-	"greatName": "Bra",
-	"sickName": "Sjuk!",
-	"perfectName": "Perfekt!!"
+	"safeFramesDesc": "Ändrar hur många ramar du har för att\nslå en ton tidigare eller sent."
 }

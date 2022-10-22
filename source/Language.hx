@@ -36,6 +36,17 @@ typedef LanguageFile =
 	var freeplayInfo3:String;
 	var scoreText:String;
 
+	//main menu
+	var storyMode:String;
+	var freeplay:String;
+	var mods:String;
+	var awards:String;
+	var credits:String;
+	var donate:String;
+	var options:String;
+	var bonus:String;
+	var quitGame:String;
+
 	//gameplay changer
 	var scrolltype:String;
 	var scrollspeed:String;
@@ -218,6 +229,17 @@ class Language
 	public static var freeplayInfo2:String;
 	public static var freeplayInfo3:String;
 	public static var scoreText:String;
+	
+	//main menu
+	public static var storyMode:String;
+	public static var freeplay:String;
+	public static var mods:String;
+	public static var awards:String;
+	public static var credits:String;
+	public static var donate:String;
+	public static var options:String;
+	public static var bonus:String;
+	public static var quitGame:String;
 
 	//gameplay changer
 	public static var scrolltype:String;
@@ -460,6 +482,17 @@ class Language
 		freeplayInfo2 = languageJson.freeplayInfo2;
 		freeplayInfo3 = languageJson.freeplayInfo3;
 		scoreText = languageJson.scoreText;
+	
+		//main menu
+		storyMode = languageJson.storyMode;
+		freeplay = languageJson.freeplay;
+		mods = languageJson.mods;
+		awards = languageJson.awards;
+		credits = languageJson.credits;
+		donate = languageJson.donate;
+		options = languageJson.options;
+		bonus = languageJson.bonus;
+		quitGame = languageJson.quitGame;
 
 		//gameplay changer
 		scrolltype = languageJson.scrolltype;

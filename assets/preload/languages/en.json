@@ -14,6 +14,17 @@
 	"engineThanks": "Thank you for using the Engine!",
 	
 	
+	"storyMode": "Story Mode",
+	"freeplay": "Freeplay",
+	"mods": "Mods",
+	"awards": "Advancements",
+	"credits": "Credits",
+	"donate": "Donate",
+	"options": "Options...",
+	"bonus": "Bonus",
+	"quitGame": "Quit Game",
+
+	
 	"weekScore": "WEEK SCORE:",
 	
 	
@@ -172,20 +183,5 @@
 	"hitWindow": "@[rating] Hit Window",
 	"hitWindowDesc": "Changes the amount of time you have\nfor hitting a \"@[rating]\" in milliseconds.",
 	"safeFrames": "Safe Frames",
-	"safeFramesDesc": "Changes how many frames you have for\nhitting a note earlier or late.",
-
-	"scoreName": "Score: ",
-	"missesName": "Misses: ",
-	"ratingName": "Rating: ",
-
-	"youSuckName": "You Suck!",
-	"shitName": "Shit",
-	"badName": "Bad",
-	"bruhName": "Bruh",
-	"mehName": "Meh",
-	"niceName": "Nice",
-	"goodName": "Good",
-	"greatName": "Great",
-	"sickName": "Sick!",
-	"perfectName": "Perfect!!"
+	"safeFramesDesc": "Changes how many frames you have for\nhitting a note earlier or late."
 }
