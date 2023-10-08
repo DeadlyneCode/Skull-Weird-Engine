@@ -300,11 +300,11 @@ class ClientPrefs
 			framerate = FlxG.save.data.framerate;
 		}
 
-		if (framerate == 'V-Sync'){
-			curFramerate = vSyncFPS;
-		}
-		else
-			curFramerate = Math.round(framerate);
+	//	if (framerate == 'V-Sync'){
+	//		curFramerate = vSyncFPS;
+	//	}
+	//	else
+	//		curFramerate = Math.round(framerate);
 
 		if (curFramerate > FlxG.drawFramerate)
 		{
